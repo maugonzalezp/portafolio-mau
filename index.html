@@ -13,13 +13,13 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
+        <title>Portafolio</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Alexa</a>
+                <a href="#" class="nav__logo">Mauricio</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -50,7 +50,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contáctanos
+                                <i class="uil uil-message nav__icon"></i> Contáctame
                             </a>
                         </li>
                     </ul>
@@ -797,7 +797,7 @@
 
                             <div>
                                 <h3 class="contact__title">Teléfono</h3>
-                                <span class="contact__subtitle">+502 1234-5678</span>
+                                <span class="contact__subtitle">+506 1234-5678</span>
                             </div>
                         </div>
 
@@ -805,8 +805,8 @@
                             <i class="uil uil-envelope contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">ujpandg@email.com</span>
+                                <h3 class="contact__title">Correo electrónico</h3>
+                                <span class="contact__subtitle">mauricio@gonzalezp.ga</span>
                             </div>
                         </div>
 
@@ -815,39 +815,74 @@
 
                             <div>
                                 <h3 class="contact__title">Ubicación</h3>
-                                <span class="contact__subtitle">Guatemala - Guatemala Av. XYZ #252</span>
+                                <span class="contact__subtitle">Costa Rica</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Forma para los mensajes de correo -->
-                    <form action="" class="contact__form grid">
+                    <form class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nombre</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" class="contact__input__name">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" class="contact__input__email">
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Proyecto</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" class="contact__input__project">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Mensaje</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input__msg"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <a class="button button--flex" type="submit">
                                 Enviar Mensaje
                                 <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
                     </form>
+
+                   <!-- INTENTO DE HACER FUNCIONAR EL FORMULARIO DE CONTACTO <script src="https://smtpjs.com/v3/smtp.js">
+                    
+                        const form = document.querySelector('.contact__form');
+
+                        //Funcion para enviar mensaje despues de presionar el boton
+                        function sendMsg(e){
+                            e.preventDefault();
+                            
+                            const name = document.querySelector('.contact__input__name'),
+                            email = document.querySelector('.contact__input__email'),
+                            project = document.querySelector('.contact__input__project'),
+                            msg = document.querySelector('.contact__input__msg');
+                        
+                            Email.send({
+                                Host : "smtp.prueba.com",
+                                Username : "email@email.com",
+                                Password : "password",
+                                To : 'prueba@prueba.com',
+                                From : email.value,
+                                Subject : "Contact Form",
+                                Body : "Nombre: " + name.value 
+                                    + "<br> Correo: " + email.value 
+                                    + "<br> Projecto: " + project.value 
+                                    + "<br> Mensaje: " + msg.value
+                            }).then(
+                            message => alert(message)
+                            );
+                        }
+                        
+                        
+                        //agregar accion al enviar
+                        form.addEventListener('submit', sendMsg)
+                        </script> -->
+
                 </div>
             </section>
         </main>
@@ -857,7 +892,7 @@
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer__title">Alexa</h1>
+                        <h1 class="footer__title">Mauricio</h1>
                         <span class="footer__subtitle">Desarrolador Frontend</span>
                     </div>
 
@@ -901,6 +936,6 @@
         <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script>       
     </body>
 </html>

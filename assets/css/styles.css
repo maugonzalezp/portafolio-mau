@@ -383,6 +383,7 @@ img{
 .button--flex{
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .button--small{
@@ -894,6 +895,50 @@ img{
 }
 
 .contact__input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem .5rem .5rem 0;
+}
+
+.contact__input__name{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem .5rem .5rem 0;
+}
+
+.contact__input__email{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem .5rem .5rem 0;
+}
+
+.contact__input__project{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem .5rem .5rem 0;
+}
+
+.contact__input__msg{
     width: 100%;
     background-color: var(--input-color);
     color: var(--text-color);
